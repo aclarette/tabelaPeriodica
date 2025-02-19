@@ -1,0 +1,15 @@
+table{
+    width: 100%;
+    height: 98vh;
+    text-align: center;
+}
+td:not(.colspan){ 
+    border: 1px solid black;
+    width: 5.5%;
+    height: 10%;
+}
+h2{margin: 0%;}
+
+.hidrogenio{ background-color: chartreuse;}
+.atomico{ text-align: left;}
+
