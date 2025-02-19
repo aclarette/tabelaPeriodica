@@ -3,7 +3,7 @@ table{
     height: 98vh;
     text-align: center;
 }
-td:not(.colspan){ 
+td:not(.colsplan){
     border: 1px solid black;
     width: 5.5%;
     height: 10%;
