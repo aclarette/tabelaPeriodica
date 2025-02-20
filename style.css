@@ -3,13 +3,22 @@ table{
     height: 98vh;
     text-align: center;
 }
-td:not(.colsplan){
+td:not(.colspan){
     border: 1px solid black;
     width: 5.5%;
     height: 10%;
 }
 h2{margin: 0%;}
 
-.hidrogenio{ background-color: chartreuse;}
+.hidrogenio{ background-color:#B3D76A;}
+.metalAlcalino{background-color:#F5C95E ;}
+.metalAlcalinoT{background-color: #EFE55B;}
+.metalTransicao{background-color:#F2B0B0 ;}
+.semiMetal{background-color:#66C4BC;}
+.naoMetal{background-color: #B3D76A;}
+.outrosMetais{background-color: #A2C6D2;}
+.halogenio{background-color: #A7DFF3;}
+.gasNobre{background-color: #67AFDE;}
+.lantanideo{background-color: #97D7E1;}
+.actinideo{background-color:#E2BDD8 ;}
 .atomico{ text-align: left;}
-
