@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela Periodica</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <table>
         <tr>
-            <td class="hidrogenio">
+            <td class="naoMetal">
                 <div class="atomico">1</div>
                 <h2>H</h2>
                 <div>Hidrogênio</div>
                 1,008
+                <div class="exibicao naoMetal">
+                    <div class="atomico">1</div>
+                    <h2>H</h2>
+                    <div>Hidrogênio</div>
+                    1,008
+                </div>
             </td>
             <td class="colspan" colspan="16">
-
             </td>
             <td class="gasNobre">
                 <div class="atomico">2</div>
                 <h2>He</h2>
                 <div>Hélio</div>
                 4,0026
+            <div class="exibicao gasNobre">
+                <div class="atomico">1</div>
+                <h2>He</h2>
+                <div>Hélio</div>
+                4,0026
+            </div>
             </td>
         </tr>
         <tr>
@@ -31,12 +44,24 @@
                 <h2>L</h2>
                 <div>Lítio</div>
                 6,94
+                <div class="exibicao metalAlcalino">
+                <div class="atomico">3</div>
+                  <h2>L</h2>
+                  <div>Lítio</div>
+                  6,94
+                </div>
             </td>
             <td class="metalAlcalinoT">
                 <div class="atomico">4</div>
                 <h2>Be</h2>
                 <div>Berílio</div>
                 9,0122
+                <div class="exibicao metalAlcalinoT">
+                    <div class="atomico">4</div>
+                    <h2>Be</h2>
+                    <div>Berílio</div>
+                    9,0122
+                </div>
             </td>
             <td class="colspan" colspan="10"></td>
             <td class="semiMetal">
@@ -44,36 +69,72 @@
                 <h2>B</h2>
                 <div>Boro</div>
                 10,81
+                <div class="exibicao semiMetal">
+                    <div class="atomico">5</div>
+                    <h2>B</h2>
+                    <div>Boro</div>
+                    10,81
+                </div>
             </td>
             <td class="naoMetal">
                 <div class="atomico">6</div>
                 <h2>C</h2>
                 <div>Carbono</div>
                 12,011
+                <div class="exibicao naoMetal">
+                    <div class="atomico">6</div>
+                    <h2>C</h2>
+                    <div>Carbono</div>
+                    12,011
+                </div>
             </td>
             <td class="naoMetal">
                 <div class="atomico">7</div>
                 <h2>N</h2>
                 <div>Nitrogênio</div>
                 14,007
+                <div class="exibicao naoMetal">
+                    <div class="atomico">7</div>
+                    <h2>N</h2>
+                    <div>Nitrogênio</div>
+                    14,007
+                </div>
             </td>
             <td class="naoMetal">
                 <div class="atomico">8</div>
                 <h2>O</h2>
                 <div>Oxigênio</div>
                 15,999
+                <div class="exibicao naoMetal">
+                    <div class="atomico">8</div>
+                    <h2>O</h2>
+                    <div>Oxigênio</div>
+                    15,999
+                </div>
             </td>
             <td class="halogenio">
                 <div class="atomico">9</div>
                 <h2>F</h2>
                 <div>Flúor</div>
                 18,998
+                <div class="exibicao halogenio">
+                    <div class="atomico">9</div>
+                    <h2>F</h2>
+                    <div>Flúor</div>
+                    18,998
+                </div>
             </td>
             <td class="gasNobre">
                 <div class="atomico">10</div>
                 <h2>Ne</h2>
                 <div>Neônio</div>
                 20,180
+                <div class="exibicao gasNobre">
+                    <div class="atomico">10</div>
+                    <h2>Ne</h2>
+                    <div>Neônio</div>
+                    20,180
+                </div>
             </td>
         </tr>
         <tr>
@@ -82,6 +143,7 @@
                 <h2>Na</h2>
                 <div>Sódio</div>
                 22,990
+                
             </td>
             <td class="metalAlcalinoT">
                 <div class="atomico">12</div>
@@ -453,7 +515,7 @@
             </td>
         </tr>
         <tr>
-            <td class="metalAlcalino" >
+            <td class="metalAlcalino">
                 <div class="atomico">87</div>
                 <h2>Fr</h2>
                 <div>Frâncio</div>
@@ -557,8 +619,10 @@
                 [294]
             </td>
         </tr>
-        <tr class="colspan"></tr>
-        <tr>
+
+        <tr height="30px">
+            <td colspan="18" class="colspan"></td>
+        </tr>
 
         <tr>
             <td class="colspan" colspan="3"></td>
@@ -655,7 +719,7 @@
             </td>
 
         </tr>
-        </tr>
+
         <tr>
             <td class="colspan" colspan="3"></td>
 
@@ -750,8 +814,59 @@
                 [266]
             </td>
         </tr>
+        <tr>
+            <td class="colspan"colspan="18">
+                <div style="display: flex; justify-content: space-around;"> 
+                    <div class="legenda">
+                        <div class="forma naoMetal"></div>
+                        <h3 class="textoLegenda">Não metal</h3>
+                    </div>
+                    <div class="legenda">
+                        <div class="forma metalAlcalino"></div>
+                        <h3 class="textoLegenda">Metais alcalinos</h3>
+                    </div>
+                    <div class="legenda">
+                        <div class="forma semiMetal"></div>
+                        <h3 class="textoLegenda">Semi metais</h3>
+                    </div>
+                    <div class="legenda">
+                        <div class="forma outrosMetais"></div>
+                        <h3 class="textoLegenda">Outros metais</h3>
+                    </div> 
+                    <div class="legenda">
+                        <div class="forma lantanideo"></div>
+                        <h3 class="textoLegenda">Lantanídeos</h3>
+                    </div>                                        
+                </div>
+            </td>           
+        </tr> 
+        <tr>
+            <td class="colspan" colspan="18">
+                <div style="display: flex; justify-content: space-around;" > 
+                    <div class="legenda">
+                        <div class="forma gasNobre"></div>
+                        <h3 class="textoLegenda">Gases nobres</h3>
+                    </div>
 
-    </table>
+                    <div class="legenda">
+                        <div class="forma metalAlcalinoT"></div>
+                        <h3 class="textoLegenda">Metais alcalinos terrosos</h3>
+                    </div>
+                    <div class="legenda">
+                        <div class="forma metalTransicao"></div>
+                        <h3 class="textoLegenda">Metais de transição</h3>  
+                    </div>
+                    <div class="legenda">
+                        <div class="forma halogenio"></div>
+                        <h3 class="textoLegenda">Halogênios</h3>
+                    </div>
+                    <div class="legenda">
+                        <div class="forma actinideo"></div>
+                        <h3 class="textoLegenda">Actinídeos</h3>
+                    </div>      
+                </div>
+            </td>         
+        </tr>
 </body>
 
 </html>
