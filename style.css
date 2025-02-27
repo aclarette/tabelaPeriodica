@@ -1,15 +1,32 @@
+*{ box-sizing: border-box;}
+
 table{
     width: 100%;
-    height: 98vh;
-    text-align: center;
+   text-align: center;
 }
-td:not(.colspan){
+td:not(.colspan) {
     border: 1px solid black;
     width: 5.5%;
     height: 10%;
+   
 }
 h2{margin: 0%;}
 
+.textoLegenda{
+  margin-left:0.3% ;
+  width: 80%;
+}
+.legenda{
+   margin-right:4%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%; 
+}
+.forma{
+    width: 25px;
+    height: 25px;
+}
 .hidrogenio{ background-color:#B3D76A;}
 .metalAlcalino{background-color:#F5C95E ;}
 .metalAlcalinoT{background-color: #EFE55B;}
@@ -22,3 +39,24 @@ h2{margin: 0%;}
 .lantanideo{background-color: #97D7E1;}
 .actinideo{background-color:#E2BDD8 ;}
 .atomico{ text-align: left;}
+
+.colspan {text-align: left;}
+
+.exibicao{
+   width: 400px;
+   height: 100px;
+   border: 1px solid black;
+   position: absolute;
+   left: 25%;
+   top: 10%;
+   display: none;
+}
+
+.naoMetal:hover .exibicao, .metalAlcalino:hover .exibicao,
+.metalAlcalinoT:hover .exibicao, .metalTransicao:hover .exibicao, 
+.semiMetal:hover .exibicao, .outrosMetais:hover .exibicao,
+.halogenio:hover .exibicao, .gasNobre:hover .exibicao, 
+.lantanideo:hover .exibicao, .actinideo:hover .exibicao
+{
+   display: block;
+}
